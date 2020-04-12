@@ -36,13 +36,14 @@
 	
 	#img-div {
 	width: 25%;
-	height: auto;
+	height: 100%;
 	justify-content: center;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
 	}
 	
-	img {
+	#image {
 	width: 100%;
 	}
 
@@ -63,7 +64,7 @@
 	box-shadow: 0px 0px 10px #aaa;
 	font-size: 20px;
 	line-height: 1.2em;
-	padding: 0 0px 0 20px;
+	padding: 0 20px 0 20px;
 	}
 	
 	#img-sidebar {
@@ -104,6 +105,16 @@
 	#emc {
 	height: 22px;
 	width: auto;
+	}
+
+	@media screen and (min-width: 700px) {
+	#image: {
+	width: 50px;
+	height: 50px; 
+	}	
+	<!-- #main {
+	background-color: black; -->
+	}
 	}
 </style>
 </head>
@@ -157,7 +168,7 @@ the development of nuclear bombs to FDR. He said there was "some
 justification— the danger that the Germans would make them".
 </h3> 
 <h2><strong>Further reading</strong></h2>
-<h3>For information on Einstein's personal life, <a id="tribute-link" href="https://en.wikipedia.org/wiki/Albert_Einstein"> click here for his 
+<h3>For information on Einstein's personal life, <a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Albert_Einstein"> click here for his 
 wikipedia page.</a> <br>
 For an explanation of Einstein's theories (and amazingly informative videos 
 on physics in general), 
@@ -165,7 +176,7 @@ on physics in general),
 		</div>
 	<div class="space"></div>
 		<div id="img-div">  
-			<img src="https://cdn.mos.cms.futurecdn.net/c7dppKDbG3JXuMfybV5tUX-650-80.jpg">
+			<img id="image" src="https://cdn.mos.cms.futurecdn.net/c7dppKDbG3JXuMfybV5tUX-650-80.jpg">
 		<div id="img-caption"><em>"Imagination is more important than knowledge."</em> <br>A portrait of Albert Einstein</div>
 			<div id="img-sidebar">
 <h4>
